@@ -1,0 +1,12 @@
+name: mlops
+project_id:
+cluster_env: mlops-cluster-env
+compute_config: mlops-cluster-compute
+ray_serve_config:
+  import_path: deploy.services.serve_model:entrypoint
+  runtime_env:
+    working_dir: .
+    upload_path: s3://mlops/AChowdhury1211/services
+    env_vars:
+      GITHUB_USERNAME: AChowdhury1211
+rollout_strategy: ROLLOUT

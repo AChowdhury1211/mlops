@@ -1,0 +1,11 @@
+name: workloads
+project_id:
+cluster_env: mlops-cluster-env
+compute_config: mlops-cluster-compute
+runtime_env:
+  working_dir: .
+  upload_path: s3://mlops/AChowdhury1211/jobs
+  env_vars:
+    GITHUB_USERNAME: AChowdhury1211
+entrypoint: bash deploy/jobs/workloads.sh
+max_retries: 0

@@ -1,3 +1,8 @@
+# For Now:
+testing-ml 
+monitoring-ml 
+feature-store
+data-engineering
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
